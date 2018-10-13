@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)file:///C:/Users/Dell/Documents/bazaar%20project/login%20page%20copy.html?psw=465&click=Submit -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<script type="text/javascript">
+			function myfunction()
+			{
+				var format = /^\w+([\._]?\w+)*@\w+([\._]?\w+)*(\.\w{2,3})+$/;
+				var em = document.getElementById("email").value;
+				if(em.match(format))
+				{
+					alert("valid email");
+				}
+				else
+				{
+					alert("invalid email");
+				}
+			}
+	</script>
+	<title>Sign in </title>
+	<style type="text/css">
+		#outer
+		{ 
+			border: 1px solid black;
+			padding:20px;
+			height: 40%;
+			width: 30%;
+			background-color: #ff0066;
+		}
+		h1
+		{
+			font-family: italic;
+			color: white;
+		}
+		#inner
+		{
+		 border-radius: 25px;
+		 border: 2px solid white;
+		 height: 45%;
+		 width: 35%;
+		 padding: 10px;
+		 box-shadow: 8px 8px 15px black;
+
+		}
+	</style>
+</head>
+<body style="background-image: url(finalimage.jpeg); margin-top: 50px;margin-left:500px ;margin-right:auto; margin-bottom: 500px">
+<div id="inner">
+        <h1 style="padding-left: 20px;text-shadow: 8px 8px 12px black; font-size: 40px;"><b>Bazzar</b></h1>
+	<div id="outer" style="align-items: center; border-radius: 15px 50px;box-shadow: 10px 10px 5px black;">
+		
+		<h2 style="text-shadow: 3px 3px 5px white;"><b>Login</b></h2>
+		<form>
+			<b>Email or Mobile phone number</b><br>
+			<input type="text" id="email" required="" style="width: 200px;height: 20px; outline: 1px solid black; box-shadow: 2px 2px 5px darkgrey;">
+			<br>
+			<b>Password</b> 
+			<br>
+			<input type="password" name="psw" required="" style="width: 200px;height: 20px; outline: 1px solid black; box-shadow: 2px 2px 5px darkgrey;">
+			<br><br>
+			<input type="submit" name="click" onclick="myfunction();" style="width: 100px ; background-color: #778899; height:30px ;margin-left: 50px; border-radius: 50px; ">
+		</form>
+	</div>
+	<h3 style="padding-left: 20px ; color:#f5f5f5; text-shadow: 8px 8px 7px  black;">----------New to Bazzar-----------</h3>
+	<input type="submit" name="click" value="Create your Bazzar Account" style="width: 300px ; height: 40px; border-radius: 25px; box-shadow: 8px 8px 5px black; font-style:oblique; text-shadow: 2px 2px 5px black; background-color: #ff0066">
+</div>
+
+
+</body></html>
